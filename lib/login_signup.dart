@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project_sep2/login.dart';
+import 'package:flutter_project_sep2/registration.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Login_SignUp extends StatelessWidget {
@@ -18,13 +20,17 @@ class Login_SignUp extends StatelessWidget {
               height: 200,),
             MaterialButton(
               shape: StadiumBorder(),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginPage()));
+              },
               color: Colors.blue,
               child: const Text('Login'),
             ),
             MaterialButton(
               shape: StadiumBorder(),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Register()));
+              },
               color: Colors.purple,
               child: const Text('Sign Up'),
             )
