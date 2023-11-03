@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_project_sep2/login_signup.dart';
+import 'package:flutter_project_sep2/stateful_Login.dart';
 import 'package:lottie/lottie.dart';
 
 import 'login.dart';
@@ -23,7 +24,7 @@ class _Splsh2State extends State<Splash2> {
   void initState() {
     Timer(Duration(seconds: 1), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => Login_SignUp()));
+          context, MaterialPageRoute(builder: (context) => Login_Stateful()));
     });
     super.initState();
   }
