@@ -24,7 +24,7 @@ class _Splsh2State extends State<Splash2> {
   void initState() {
     Timer(Duration(seconds: 1), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => Login_Stateful()));
+          context, MaterialPageRoute(builder: (context) => Login_SignUp()));
     });
     super.initState();
   }

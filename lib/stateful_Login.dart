@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_project_sep2/homee.dart';
+import 'package:flutter_project_sep2/stateful_reg.dart';
 
 class Login_Stateful extends StatefulWidget {
   @override
@@ -76,7 +77,11 @@ class Login_StatefulState extends State<Login_Stateful> {
                 },
                 child: const Text("Login",
                   style:TextStyle(color: Colors.white) ,),
-              )
+              ),
+              TextButton(onPressed: (){
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context)=>Reg_Stateful()));
+              }, child: Text("Register Here!!!"))
             ],
           ),
         ),
