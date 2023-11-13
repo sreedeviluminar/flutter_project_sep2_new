@@ -16,14 +16,13 @@ class Listview_Seperated extends StatelessWidget {
             return Card(color: Colors.green, child: Text("hello"));
           },
           separatorBuilder: (context, index) {
-            if(index%3==0){
-            return Divider(
-              thickness: 3,
-              color: Colors.red,
-            );}
-            else{
-              return
-              SizedBox();
+            if (index % 3 == 0) {
+              return Divider(
+                thickness: 3,
+                color: Colors.red,
+              );
+            } else {
+              return SizedBox();
             }
           },
           itemCount: 10),
